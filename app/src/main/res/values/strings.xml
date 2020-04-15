@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Healty Control</string>
+    <string name="healthy_control">Healty Control</string>
+    <string name="correo">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ingresar_con_facebook">Ingresar con Facebook</string>
+    <string name="ingresar_con_gmail">Ingresar con Gmail</string>
+    <string name="glucometria">Glucometrías</string>
+    <string name="presion_arterial">Presión Arterial</string>
+    <string name="peso">Peso</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="consultar_historial">Consultar historial de registros</string>
+    <string name="registro_glucometrias">Registro de glucometrías</string>
+    <string name="fecha_registro">Fecha y hora del registro</string>
+    <string name="valor_del_glucometro">Digite el valor del glucómetro</string>
+    <string name="guardar">Guardar</string>
+    <string name="registro_presion">Registro de presión arterial</string>
+    <string name="presion_alta">Digite el valor alto</string>
+    <string name="presion_baja">Digiite el valor bajo</string>
+    <string name="registro_peso">Registro de peso</string>
+    <string name="valor_peso">Digite su peso</string>
+    <string name="registro_temperatura">Registro de temperatura</string>
+    <string name="valor_temperatura">Digite su temperatura (°C)</string>
+    <string name="registro">¿No tienees una cuenta? Regístrate</string>
+    <string name="olvidar_contrasena">o ¿Has olvidado la contraseña?</string>
+    <string name="desde">Desde</string>
+    <string name="hasta">Hasta</string>
+    <string name="historial">Historial de registros</string>
+    <string name="generar_informe">Generar gráfico</string>
+
+
+</resources>

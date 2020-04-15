@@ -1,0 +1,2 @@
+rootProject.name='Healty Control'
+include ':app'
