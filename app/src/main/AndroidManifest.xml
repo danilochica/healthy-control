@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.healthycontrol.view.ConsultaRegistrosActitvity"></activity>
-        <activity android:name="com.healthycontrol.view.TemperaturaActivity" />
-        <activity android:name="com.healthycontrol.view.PesoActivity" />
-        <activity android:name="com.healthycontrol.view.PresionActivity" />
-        <activity android:name="com.healthycontrol.view.GlucometriasActivity" />
-        <activity android:name="com.healthycontrol.view.HomeActivity" />
-        <activity android:name="com.healthycontrol.view.MainActivity">
+        <activity android:name=".view.RegistrarUsuarioActivity"></activity>
+        <activity android:name=".view.ConsultaRegistrosActitvity" />
+        <activity android:name=".view.TemperaturaActivity" />
+        <activity android:name=".view.PesoActivity" />
+        <activity android:name=".view.PresionActivity" />
+        <activity android:name=".view.GlucometriasActivity" />
+        <activity android:name=".view.HomeActivity" />
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

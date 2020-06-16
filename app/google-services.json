@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "408949251829",
+    "firebase_url": "https://healtycontrol.firebaseio.com",
+    "project_id": "healtycontrol",
+    "storage_bucket": "healtycontrol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408949251829:android:758e7c8e949c76f70d2fbc",
+        "android_client_info": {
+          "package_name": "com.healtycontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408949251829-shcljbbrc00oq5ari3vu8kdo8nd03v67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.healtycontrol",
+            "certificate_hash": "d01e59d7fe1580338786abeac4a6c22e67c9ebd2"
+          }
+        },
+        {
+          "client_id": "408949251829-bh48pqc1851l2hiffrlt3nf7k9vfg8it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu_LmT6Nvp7xxgP8z-ErxNVjYZdHf1rLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408949251829-bh48pqc1851l2hiffrlt3nf7k9vfg8it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

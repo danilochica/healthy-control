@@ -1,4 +1,4 @@
-package com.healthycontrol.view;
+package com.healtycontrol.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.healthycontrol.utilidades.GenerarFecha;
+import com.healtycontrol.utilidades.GenerarFecha;
 import com.healtycontrol.R;
 
 import butterknife.BindView;

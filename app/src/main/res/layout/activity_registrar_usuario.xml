@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.healtycontrol.view.MainActivity">
+    tools:context=".view.RegistrarUsuarioActivity">
 
     <TextView
         android:id="@+id/lbTitulo"
@@ -24,6 +24,23 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbTitulo"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
         android:id="@+id/txtCorreo"
         android:layout_width="340dp"
         android:layout_height="50dp"
@@ -37,8 +54,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbTitulo"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        app:layout_constraintVertical_bias="0.059" />
 
     <EditText
         android:id="@+id/txtPassword"
@@ -67,18 +84,19 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#77D353"
-        android:fontFamily="@font/ubuntu_bold"
-        android:onClick="loginUser"
+        android:onClick="registrarUsuario"
         android:text="@string/ingresar"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
+        android:fontFamily="@font/ubuntu_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.321"
+        tools:ignore="OnClick" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -91,27 +109,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.046"
         app:srcCompat="@drawable/ic_medical" />
-
-    <Button
-        android:id="@+id/btnUsuarioNuevo"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="#FF7840"
-        android:fontFamily="@font/ubuntu_bold"
-        android:onClick="goToRegistrarUsuarioActivity"
-        android:text="@string/quiero_registrarme"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIngresar"
-        app:layout_constraintVertical_bias="0.2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

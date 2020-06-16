@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.healthycontrol.view.GlucometriasActivity">
+    tools:context="com.healtycontrol.view.GlucometriasActivity">
 
     <TextView
         android:id="@+id/lbRegistroGlucometrias"

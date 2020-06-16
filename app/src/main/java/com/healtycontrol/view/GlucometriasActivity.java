@@ -1,4 +1,4 @@
-package com.healthycontrol.view;
+package com.healtycontrol.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.healthycontrol.utilidades.GenerarFecha;
+import com.healtycontrol.utilidades.GenerarFecha;
 import com.healtycontrol.R;
 
 import java.util.ArrayList;

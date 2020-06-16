@@ -1,4 +1,4 @@
-package com.healthycontrol.entidades;
+package com.healtycontrol.entidades;
 
 import java.util.Date;
 

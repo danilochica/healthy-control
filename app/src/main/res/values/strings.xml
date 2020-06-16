@@ -28,6 +28,9 @@
     <string name="hasta">Hasta</string>
     <string name="historial">Historial de registros</string>
     <string name="generar_informe">Generar gráfico</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="quiero_registrarme">Soy nuevo y quiero registrarme</string>
+    <string name="nombre">Nombre</string>
 
 
 </resources>

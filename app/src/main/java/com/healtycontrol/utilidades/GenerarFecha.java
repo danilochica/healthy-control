@@ -1,4 +1,4 @@
-package com.healthycontrol.utilidades;
+package com.healtycontrol.utilidades;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
