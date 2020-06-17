@@ -36,6 +36,7 @@
     <string name="mensaje_home">Sus signos vitales, en el bolsillo</string>
     <string name="consulta_presion">Reporte de presión arterial</string>
     <string name="consulta_peso">Reporte de peso</string>
+    <string name="consulta_temperatura">Reporte de temperatura</string>
 
 
 </resources>

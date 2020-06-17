@@ -24,6 +24,7 @@ public class MostrarTemperaturaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar_temperatura);
+        this.setTitle(R.string.consulta_temperatura);
         recycleTemperatura = findViewById(R.id.recycleTemperatura);
         recycleTemperatura.setLayoutManager(new LinearLayoutManager(this));
         firestore = FirebaseFirestore.getInstance();
