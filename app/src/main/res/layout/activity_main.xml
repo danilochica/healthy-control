@@ -68,7 +68,7 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="#77D353"
         android:fontFamily="@font/ubuntu_bold"
-        android:onClick="loginUser"
+        android:onClick="iniciarSesion"
         android:text="@string/ingresar"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"

@@ -152,32 +152,32 @@
         android:id="@+id/btnCerrarSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cerrar_sesion"
+        android:backgroundTint="#2C37B3"
         android:drawableTint="@color/fuente_blanca"
         android:fontFamily="@font/ubuntu_bold"
+        android:onClick="cerrarSesion"
+        android:text="@string/cerrar_sesion"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:onClick="cerrarSesion"
-        android:backgroundTint="#2C37B3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintHorizontal_bias="0.986"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/txtUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_bold"
-        android:text="TextView"
+        android:text="Hola, "
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnCerrarSesion"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.045" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

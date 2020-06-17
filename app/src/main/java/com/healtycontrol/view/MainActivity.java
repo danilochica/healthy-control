@@ -1,6 +1,5 @@
 package com.healtycontrol.view;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,16 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.healtycontrol.R;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -54,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private boolean esValido(){
+    private boolean sonValidosLosDatosIngresados(){
 
         correo = txtCorreo.getText().toString();
         password = txtPassword.getText().toString();
@@ -73,8 +64,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void loginUser(View view){
-        esValido();
+    public void iniciarSesion(View view){
+        if(sonValidosLosDatosIngresados()){
+            verificarCredenciales();
+        }
+
+    }
+
+    private void verificarCredenciales() {
         firebaseAuth.signInWithEmailAndPassword(correo, password).addOnCompleteListener(task -> {
             if(task.isSuccessful()){
                 startActivity(new Intent(MainActivity.this, HomeActivity.class));

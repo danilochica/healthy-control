@@ -52,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
-                    String nombre = "Bienvenido, " + dataSnapshot.child("nombre").getValue().toString();
+                    String nombre = "Hola! , " + dataSnapshot.child("nombre").getValue().toString();
 
                     txtUsuario.setText(nombre);
                 }

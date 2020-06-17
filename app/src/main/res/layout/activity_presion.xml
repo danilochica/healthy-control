@@ -50,10 +50,10 @@
         android:drawableTop="@drawable/ic_save_40"
         android:drawableTint="@color/fuente_blanca"
         android:fontFamily="@font/ubuntu_bold"
-        android:onClick="goToHome"
+        android:onClick="guardarRegistro"
+        android:paddingTop="15dp"
         android:text="@string/guardar"
         android:textAllCaps="false"
-        android:paddingTop="15dp"
         android:textColor="@color/fuente_blanca"
 
         android:textSize="20sp"

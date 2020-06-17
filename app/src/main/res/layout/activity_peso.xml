@@ -40,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbRegistroPeso"
-        app:layout_constraintVertical_bias="0.369" />
+        app:layout_constraintVertical_bias="0.177" />
 
     <EditText
         android:id="@+id/txtPeso"
@@ -54,10 +54,10 @@
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewFechaPeso"
-        app:layout_constraintVertical_bias="0.985" />
+        app:layout_constraintVertical_bias="0.63" />
 
     <Button
         android:id="@+id/btnGuardar"
@@ -70,17 +70,17 @@
         android:drawableTop="@drawable/ic_save_40"
         android:drawableTint="@color/fuente_blanca"
         android:fontFamily="@font/ubuntu_bold"
-        android:onClick="goToHome"
+        android:onClick="guardarRegistro"
         android:paddingTop="15dp"
         android:text="@string/guardar"
         android:textAllCaps="false"
-        android:textColor="@color/fuente_blanca"
 
+        android:textColor="@color/fuente_blanca"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPeso"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintVertical_bias="0.187" />
 </androidx.constraintlayout.widget.ConstraintLayout>
