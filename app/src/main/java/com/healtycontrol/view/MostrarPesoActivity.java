@@ -11,31 +11,31 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.healtycontrol.R;
-import com.healtycontrol.adapter.GlucometriaAdapter;
-import com.healtycontrol.entidades.Glucometria;
+import com.healtycontrol.adapter.PesoAdapter;
+import com.healtycontrol.entidades.Peso;
 
 
-public class MostrarGlucometriasActivity extends AppCompatActivity {
+public class MostrarPesoActivity extends AppCompatActivity {
 
-    RecyclerView recycleGlucometrias;
-    GlucometriaAdapter adapter;
+    RecyclerView recyclePeso;
+    PesoAdapter adapter;
     FirebaseFirestore firestore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mostrar_glucometrias);
-        this.setTitle(R.string.consulta_glucometrias);
-        recycleGlucometrias = findViewById(R.id.recycleGlucometrias);
-        recycleGlucometrias.setLayoutManager(new LinearLayoutManager(this));
+        setContentView(R.layout.activity_mostrar_peso);
+        this.setTitle(R.string.consulta_peso);
+        recyclePeso = findViewById(R.id.recyclePeso);
+        recyclePeso.setLayoutManager(new LinearLayoutManager(this));
         firestore = FirebaseFirestore.getInstance();
 
-        Query query = firestore.collection("Glucometrias").whereEqualTo("usuario", FirebaseAuth.getInstance().getCurrentUser().getEmail());
+        Query query = firestore.collection("Peso").whereEqualTo("usuario", FirebaseAuth.getInstance().getCurrentUser().getEmail());
 
-        FirestoreRecyclerOptions<Glucometria> recyclerOptions = new FirestoreRecyclerOptions.Builder<Glucometria>().setQuery(query, Glucometria.class).build();
-        adapter = new GlucometriaAdapter(recyclerOptions);
+        FirestoreRecyclerOptions<Peso> recyclerOptions = new FirestoreRecyclerOptions.Builder<Peso>().setQuery(query, Peso.class).build();
+        adapter = new PesoAdapter(recyclerOptions);
         adapter.notifyDataSetChanged();
-        recycleGlucometrias.setAdapter(adapter);
+        recyclePeso.setAdapter(adapter);
     }
 
     @Override

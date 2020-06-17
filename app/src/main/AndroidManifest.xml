@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MostrarGlucometriasActivity"></activity>
+        <activity android:name=".view.MostrarTemperaturaActivity"></activity>
+        <activity android:name=".view.MostrarPesoActivity" />
+        <activity android:name=".view.MostrarPresionArterialActivity" />
+        <activity android:name=".view.MostrarGlucometriasActivity" />
         <activity android:name=".view.RegistrarUsuarioActivity" />
         <activity android:name=".view.ConsultaRegistrosActitvity" />
         <activity android:name=".view.TemperaturaActivity" />

@@ -7,17 +7,17 @@
     tools:context="com.healtycontrol.view.ConsultaRegistrosActitvity">
 
     <Button
-        android:id="@+id/btnPeso2"
+        android:id="@+id/btnConsultaPeso"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="288dp"
-        android:backgroundTint="@color/glucometria"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
         android:drawableTop="@drawable/ic_peso"
         android:drawableTint="@color/fuente_blanca"
         android:fontFamily="@font/ubuntu_bold"
-        android:onClick="goToPesoActivity"
+
+        android:onClick="goToMostrarPeso"
         android:paddingTop="30dp"
         android:text="@string/peso"
         android:textAllCaps="false"
@@ -25,23 +25,21 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbConsulta"
-        app:layout_constraintVertical_bias="0.978" />
+        app:layout_constraintVertical_bias="0.292" />
 
     <Button
-        android:id="@+id/btnPresionArterial2"
+        android:id="@+id/btnConsultaPresionArterial"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="124dp"
-        android:backgroundTint="@color/glucometria"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
         android:drawableTop="@drawable/ic_presion"
         android:drawableTint="@color/fuente_blanca"
         android:fontFamily="@font/ubuntu_bold"
-        android:onClick="goToPresionActivity"
+        android:onClick="goToMostrarPresionArterial"
         android:paddingTop="30dp"
         android:text="@string/presion_arterial"
         android:textAllCaps="false"
@@ -49,19 +47,18 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnGlucometria"
-        app:layout_constraintTop_toBottomOf="@+id/lbTitulo"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultaTemperatura"
+        app:layout_constraintVertical_bias="0.142" />
 
     <Button
-        android:id="@+id/btnGlucometria2"
+        android:id="@+id/btnConsultaGlucometria"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="124dp"
-        android:backgroundTint="#2C37B3"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
         android:drawableTop="@drawable/ic_glucometria"
         android:drawableTint="@color/fuente_blanca"
         android:fontFamily="@font/ubuntu_bold"
@@ -73,23 +70,20 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbTitulo"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultaPeso"
+        app:layout_constraintVertical_bias="0.142" />
 
     <Button
-        android:id="@+id/btnTemperatura2"
+        android:id="@+id/btnConsultaTemperatura"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="244dp"
-        android:backgroundTint="@color/glucometria"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
         android:drawableTop="@drawable/ic_temperatura_2"
         android:drawableTint="@color/fuente_blanca"
         android:fontFamily="@font/ubuntu_bold"
-        android:onClick="goToTemperaturaActivity"
+        android:onClick="goToMostrarTemperatura"
         android:paddingTop="30dp"
         android:text="@string/temperatura"
         android:textAllCaps="false"
@@ -97,10 +91,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnPeso"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbConsulta"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.292" />
 
     <TextView
         android:id="@+id/lbConsulta"
@@ -118,6 +112,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="256dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/mensaje_historial"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbConsulta"
+        app:layout_constraintVertical_bias="0.055" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

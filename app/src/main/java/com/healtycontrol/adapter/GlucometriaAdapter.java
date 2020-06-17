@@ -1,5 +1,7 @@
 package com.healtycontrol.adapter;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,26 +22,38 @@ public class GlucometriaAdapter extends FirestoreRecyclerAdapter<Glucometria,Glu
         super(options);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onBindViewHolder(@NonNull ViewHolder holder, int position, Glucometria glucometria) {
-        holder.tvValor.setText(String.valueOf(glucometria.getValorGlucometria()));
-        holder.tvHorario.setText(glucometria.getHorario());
-        holder.tvResultado.setText(glucometria.getResultado());
-        holder.tvfecha.setText(glucometria.getFechaRegistro().toString());
+        holder.tvValor.setText("Valor registrado: " + glucometria.getValorGlucometria() + " - " + glucometria.getHorario());
+        holder.tvResultado.setText("Resultado: " + glucometria.getResultado());
+        asignarColorResultado(glucometria.getResultado(), holder);
+        holder.tvfecha.setText("Fecha y hora:" + glucometria.getFechaRegistro().toString());
 
+    }
+
+    private void asignarColorResultado(String resultado, ViewHolder holder) {
+        if (resultado.equals("ALTO")) {
+            holder.tvResultado.setTextColor(Color.parseColor("#D0240A"));
+        } else {
+            if (resultado.equals("BAJO")) {
+                holder.tvResultado.setTextColor(Color.parseColor("#FDCB27"));
+            } else {
+                holder.tvResultado.setTextColor(Color.parseColor("#74B80E"));
+            }
+        }
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_glucometrias, parent, false );
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_resultados, parent, false );
         return new ViewHolder(view);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvValor;
-        TextView tvHorario;
         TextView tvResultado;
         TextView tvfecha;
 
@@ -48,7 +62,6 @@ public class GlucometriaAdapter extends FirestoreRecyclerAdapter<Glucometria,Glu
             super(itemView);
 
             tvValor = itemView.findViewById(R.id.tvValor);
-            tvHorario = itemView.findViewById(R.id.tvHorario);
             tvResultado = itemView.findViewById(R.id.tvResultado);
             tvfecha = itemView.findViewById(R.id.tvfecha);
 

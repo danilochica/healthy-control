@@ -31,6 +31,11 @@
     <string name="cerrar_sesion">Cerrar Sesión</string>
     <string name="quiero_registrarme">Soy nuevo y quiero registrarme</string>
     <string name="nombre">Nombre</string>
+    <string name="consulta_glucometrias">Reporte de Glucometrías</string>
+    <string name="mensaje_historial">Selecciona el historial que quieres conocer</string>
+    <string name="mensaje_home">Sus signos vitales, en el bolsillo</string>
+    <string name="consulta_presion">Reporte de presión arterial</string>
+    <string name="consulta_peso">Reporte de peso</string>
 
 
 </resources>

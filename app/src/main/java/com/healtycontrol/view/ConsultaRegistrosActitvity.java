@@ -1,7 +1,5 @@
 package com.healtycontrol.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -10,18 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
-import android.widget.DatePicker;
-import android.widget.Spinner;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.healtycontrol.R;
 
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ConsultaRegistrosActitvity extends AppCompatActivity {
@@ -60,14 +54,21 @@ public class ConsultaRegistrosActitvity extends AppCompatActivity {
     public  void goToMostrarGlucometrias(View view) {
         Intent intent = new Intent(this, MostrarGlucometriasActivity.class);
         startActivity(intent);
-        finish();
-
     }
 
-
-
-    private void goToHome (View view){
+    public void goToMostrarPresionArterial(View view){
+        Intent intent = new Intent(this, MostrarPresionArterialActivity.class);
+        startActivity(intent);
     }
 
+    public void goToMostrarPeso(View view){
+        Intent intent = new Intent(this, MostrarPesoActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToMostrarTemperatura(View view){
+        Intent intent = new Intent(this, MostrarTemperaturaActivity.class);
+        startActivity(intent);
+    }
 
 }

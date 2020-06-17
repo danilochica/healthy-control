@@ -1,7 +1,5 @@
 package com.healtycontrol.entidades;
 
-import com.google.firebase.Timestamp;
-
 import java.util.Date;
 
 
@@ -12,7 +10,8 @@ public class Glucometria {
     private String resultado;
     private Double valorGlucometria;
 
-    public Glucometria(){}
+    public Glucometria() {
+    }
 
     public Glucometria(Date fechaRegistro, String horario, String resultado, Double valorGlucometria) {
         this.fechaRegistro = fechaRegistro;
